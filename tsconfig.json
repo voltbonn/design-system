@@ -4,7 +4,8 @@
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "strict": true,
+    // "strict": true,
+    "noImplicitAny": false,
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -13,7 +14,8 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "allowJs": true,
-    "checkJs": true
+    "checkJs": true,
+    "types": ["vite/client"]
   },
   "include": ["./src"]
 }

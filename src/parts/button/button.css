@@ -1,0 +1,16 @@
+button {
+  border: 1px solid var(--color);
+  border-radius: 5px;
+
+  & span {
+    color: red;
+  }
+
+  &.primary {
+    background: red;
+
+    & span {
+      color: white;
+    }
+  }
+}

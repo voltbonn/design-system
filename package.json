@@ -3,12 +3,26 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "build:css": "npx postcss src/bundle.css -u postcss-import --base src --dir dist",
+    "serve": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.3.0-rc.11",
+    "@storybook/addon-essentials": "^6.3.0-rc.11",
+    "@storybook/addon-links": "^6.3.0-rc.11",
+    "@storybook/html": "^6.3.0-rc.11",
+    "babel-loader": "^8.2.2",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
     "postcss-nesting": "^8.0.1",
+    "storybook-builder-vite": "0.0.9",
     "typescript": "^4.3.2",
     "vite": "^2.3.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "postcss-import": "^14.0.2"
+  }
 }
