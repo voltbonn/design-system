@@ -18,11 +18,17 @@
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "postcss-nesting": "^8.0.1",
+    "reg-keygen-git-hash-plugin": "^0.10.16",
+    "reg-notify-github-plugin": "^0.10.16",
+    "reg-publish-s3-plugin": "^0.10.16",
     "storybook-builder-vite": "0.0.9",
     "typescript": "^4.3.2",
     "vite": "^2.3.7"
   },
   "dependencies": {
-    "postcss-import": "^14.0.2"
+    "postcss-import": "^14.0.2",
+    "puppeteer": "^10.0.0",
+    "reg-suit": "^0.10.16",
+    "storycap": "^3.0.4"
   }
 }
