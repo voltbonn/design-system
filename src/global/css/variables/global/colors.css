@@ -1,0 +1,14 @@
+:root {
+  /*
+  ###################
+      Base Colors
+  ###################
+  */
+  /* see https://readymag.com/u40694597/voltbrandguidance/colors/ */
+  --purple: rgb(80, 35, 121);
+  --yellow: rgb(253, 194, 32);
+  --green: rgb(27, 190, 111);
+  --blue: rgb(130, 208, 244);
+  --red: rgb(230, 62, 18);
+  --white: rgb(255, 255, 255);
+}

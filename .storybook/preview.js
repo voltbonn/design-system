@@ -13,6 +13,11 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  options: {
+    storySort: {
+      order: ["Introduction", "Foundation", "*"],
+    },
+  },
   screenshot: {
     viewports: {
       // Big monitor (4k)

@@ -1,17 +1,5 @@
-/* These imports are for prod compilation replaced in place thanks to the postcss plugin postcss-import */
-@import url("./global/css/variables.css");
+/* When compiling for production these imports are replaced in place thanks to the postcss plugin postcss-import */
+@import url("./global/css/variables/");
+@import url("./global/css/reset.css");
 @import url("./global/css/base.css");
 @import url("./parts/button/button.css");
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-
-  & h1 {
-    color: green;
-  }
-}

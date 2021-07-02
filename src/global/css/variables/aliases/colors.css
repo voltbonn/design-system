@@ -1,0 +1,20 @@
+.volt,
+.volt.default {
+  --primary-color: var(--purple);
+  --secondary-color: var(--white);
+
+  --background: var(--white);
+
+  --font-primary-color: var(--white);
+  --font-secondary-color: var(--purple);
+}
+
+.volt.purple {
+  --primary-color: var(--white);
+  --secondary-color: var(--purple);
+
+  --background: var(--purple);
+
+  --font-primary-color: var(--purple);
+  --font-secondary-color: var(--white);
+}

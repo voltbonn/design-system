@@ -1,0 +1,42 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Introduction" />
+
+# Volt Design System
+
+Looking for ready to use styles to apply to your site or product? This design system is a collection of different web elements for a common Volt style.
+
+We create one (or more) CSS files you can drop in your project. Take a look at the examples of different elements and web components to apply the styles.
+For some (just a few interactive) components you also need to add JS files we provide.
+
+## Example
+
+Basic Button:
+
+<Canvas name="Button default">
+  <div class="volt default">
+    <button>
+      <span>I'm a button</span>
+    </button>
+  </div>
+</Canvas>
+
+<Canvas name="Button purple">
+  <div class="volt purple">
+    <button>
+      <span>I'm the same button in purple mode</span>
+    </button>
+  </div>
+</Canvas>
+
+### Enabling the styles
+
+You have to wrap your elements. The wrapping element has to have a `.volt` class. You can decide if you want the default (white) or purple design by adding `.purple` to the wrapping element.
+
+### More Information
+
+On the left you'll find a sidebar. There's a section for elements. Open it to find all available elements.
+
+## Principles
+
+We use some common rules and philosphies for developing the design system. Make sure to look at the Foundation section to understand how it works.
