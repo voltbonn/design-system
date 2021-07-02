@@ -1,12 +1,10 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "start-storybook -p 6006",
     "build": "tsc && vite build",
     "build:css": "npx postcss src/bundle.css -u postcss-import --base src --dir dist",
-    "serve": "vite preview",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
