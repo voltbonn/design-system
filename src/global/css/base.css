@@ -1,5 +1,5 @@
 .volt {
   position: relative;
-  background: var(--background);
+  background: var(--v-background);
   padding: 5px;
 }

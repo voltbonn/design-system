@@ -1,0 +1,104 @@
+.volt {
+  /*
+  ###################
+      Base Colors
+  ###################
+  */
+  /* see https://readymag.com/u40694597/voltbrandguidance/colors/ */
+  --v-purple-h: 271;
+  --v-purple-s: 55.1%;
+  --v-purple-l: 30.6%;
+  --v-purple-100: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + -30%)
+  );
+  --v-purple-200: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + -20%)
+  );
+  --v-purple-300: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + -10%)
+  );
+  --v-purple-400: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + -5%)
+  );
+  --v-purple-500: hsl(var(--v-purple-h), var(--v-purple-s), var(--v-purple-l));
+  --v-purple-600: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + 5%)
+  );
+  --v-purple-700: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + 10%)
+  );
+  --v-purple-800: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + 20%)
+  );
+  --v-purple-900: hsl(
+    var(--v-purple-h),
+    var(--v-purple-s),
+    calc(var(--v-purple-l) + 30%)
+  );
+  --v-purple: var(--v-purple-500, #502379);
+
+  --v-white-h: 0;
+  --v-white-s: 0%;
+  --v-white-l: 99%;
+  --v-white-100: hsl(var(--v-white-h), var(--v-white-s), var(--v-white-l));
+  --v-white-200: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 5%)
+  );
+  --v-white-300: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 10%)
+  );
+  --v-white-400: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 15%)
+  );
+  --v-white-500: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 20%)
+  );
+  --v-white-600: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 25%)
+  );
+  --v-white-700: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 30%)
+  );
+  --v-white-800: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 35%)
+  );
+  --v-white-900: hsl(
+    var(--v-white-h),
+    var(--v-white-s),
+    calc(var(--v-white-l) - 40%)
+  );
+  --v-white: var(--v-white-100);
+
+  --v-yellow: rgb(253, 194, 32);
+  --v-green: rgb(27, 190, 111);
+  --v-blue: rgb(130, 208, 244);
+  --v-red: rgb(230, 62, 18);
+}

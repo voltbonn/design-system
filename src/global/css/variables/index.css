@@ -1,2 +1,2 @@
-@import url("./global/colors.css");
-@import url("./aliases/colors.css");
+@import url("./palette/colors.css");
+@import url("./functional/colors.css");

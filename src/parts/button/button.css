@@ -1,12 +1,29 @@
 .volt {
   & button {
-    background: var(--primary-color);
+    background: var(--v-secondary-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     padding: 3px 10px;
 
     & span {
-      color: var(--font-primary-color);
+      color: var(--v-font-color-on-secondary);
+    }
+
+    &.primary {
+      background: var(--v-primary-color);
+
+      & span {
+        color: var(--v-font-color-on-primary);
+      }
+    }
+
+    &.secondary {
+      background: transparent;
+      border: 1px solid var(--v-primary-color);
+
+      & span {
+        color: var(--v-font-color);
+      }
     }
   }
 }
