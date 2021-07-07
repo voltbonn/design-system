@@ -1,4 +1,6 @@
-import { withScreenshot } from "storycap";
+import { withScreenshot } from "storycap"
+import darkTheme from './DarkTheme.js'
+import lightTheme from './LightTheme.js'
 import "../src/bundle.css";
 
 export const decorators = [
@@ -50,4 +52,12 @@ export const parameters = {
       },
     },
   },
-};
+  darkMode: {
+    current: 'light', // Set the initial theme
+    dark: darkTheme, // Override the default dark theme
+    light: lightTheme // Override the default light theme
+  },
+  docs: {
+    theme: lightTheme,
+  },
+}
