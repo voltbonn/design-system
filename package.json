@@ -1,23 +1,26 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "start-storybook -p 6006",
+    "dev": "start-storybook -s ./public -p 6006",
     "build": "tsc && vite build",
     "build:css": "npx postcss src/bundle.css -u postcss-import --base src --dir dist",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook -s public"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@storybook/addon-actions": "^6.3.2",
     "@storybook/addon-essentials": "^6.3.2",
     "@storybook/addon-links": "^6.3.2",
+    "@storybook/addons": "^6.3.3",
     "@storybook/html": "^6.3.2",
+    "@storybook/theming": "^6.3.3",
     "babel-loader": "^8.2.2",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^8.0.1",
     "storybook-builder-vite": "0.0.10",
+    "storybook-dark-mode": "^1.0.8",
     "storycap": "^3.0.4",
     "typescript": "^4.3.2",
     "vite": "^2.3.7"
