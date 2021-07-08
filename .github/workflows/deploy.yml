@@ -43,7 +43,7 @@ jobs:
         with:
           email: thomas.rosen@me.com
           build_dir: build
-          cname: ""
+          cname: design.volt.link
       #- name: run deploy commands on uberspace
       #  uses: garygrossgarten/github-action-ssh@release
       #  with:
