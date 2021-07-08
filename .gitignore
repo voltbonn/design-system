@@ -4,3 +4,4 @@ dist
 dist-ssr
 *.local.reg
 .reg
+storybook-static
