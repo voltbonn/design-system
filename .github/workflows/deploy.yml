@@ -30,10 +30,10 @@ jobs:
         run: yarn
       - name: Add gh-pages as a dev-dependency
         run: yarn add --dev gh-pages
-      - name: Build
-        run: yarn build
-      - name: Build CSS
-        run: yarn build:css
+      # - name: Build
+      #   run: yarn build
+      # - name: Build CSS
+      #   run: yarn build:css
       - name: Build Storybook
         run: yarn build:storybook
       - name: Deploy to GitHub Pages
@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           email: thomas.rosen@me.com
-          build_dir: build
+          build_dir: storybook-static
           cname: design.volt.link
       #- name: run deploy commands on uberspace
       #  uses: garygrossgarten/github-action-ssh@release
