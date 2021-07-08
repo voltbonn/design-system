@@ -1,0 +1,98 @@
+:root {
+  --font-add: 1rem;
+
+  --body-font-size: calc(var(--font-add) + var(--basis));
+  --body2-font-size: calc(var(--font-add) + var(--basis_x0_5));
+}
+
+* {
+  font-family: 'Ubuntu', 'Noto Kufi Arabic', 'Geeza Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  /*
+    Ubuntu = Volt (It includes latin and arabic characters.)
+
+    Noto Kufi Arabic = A Noto font from Google (maybe it's installed)
+    Geeza Pro = macOS Arabic Default
+
+    -apple-system, BlinkMacSystemFont = macOS Default
+    Helvetica Neue = Old macOS Default
+    Segoe UI = Windows Default
+    Roboto = Android Default
+    Fira Sans = Firefox OS Default
+    Oxygen, Cantarell, Droid Sans = Linux
+
+    sans-serif = Fallback
+  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ar"] { /* for arabic */
+  letter-spacing: 0 !important;
+}
+
+code {
+  font-family: 'Ubuntu Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body,
+.body1,
+p {
+  font-size: var(--body-font-size);
+}
+
+.body2 {
+  font-size: var(--body2-font-size);
+}
+
+p {
+  /* width: calc(var(--basis_x16) + var(--basis_x8)); */
+  max-width: 100%;
+  margin: var(--basis) 0;
+  text-decoration: inherit;
+}
+
+h1 {
+  font-size: calc(var(--font-add) + var(--basis_x4));
+  line-height: 0.9;
+  /* margin: 0 0 var(--basis) 0; */
+  margin: var(--basis_x4) 0 var(--basis) 0;
+  text-decoration: inherit;
+}
+
+h2 {
+  font-size: calc(var(--font-add) + var(--basis_x2));
+  margin: var(--basis_x4) 0 var(--basis) 0;
+  text-decoration: inherit;
+}
+
+h3 {
+  font-size: calc(var(--font-add) + var(--basis));
+  margin: var(--basis_x4) 0 var(--basis) 0;
+  text-decoration: inherit;
+}
+
+h1.purple,
+h2.purple,
+h3.purple {
+  color: var(--purple);
+}
+h1.yellow,
+h2.yellow,
+h3.yellow {
+  color: var(--yellow);
+}
+h1.green,
+h2.green,
+h3.green {
+  color: var(--green);
+}
+h1.blue,
+h2.blue,
+h3.blue {
+  color: var(--blue);
+}
+h1.red,
+h2.red,
+h3.red {
+  color: var(--red);
+}

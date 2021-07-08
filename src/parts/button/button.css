@@ -1,29 +1,99 @@
-.volt {
-  & button {
-    background: var(--v-secondary-color);
-    border: none;
-    border-radius: 1px;
-    padding: 3px 10px;
+/*
+button {
+  background: var(--v-secondary-color);
+  border: none;
+  border-radius: 1px;
+  padding: 3px 10px;
+
+  & span {
+    color: var(--v-font-color-on-secondary);
+  }
+
+  &.primary {
+    background: var(--v-primary-color);
 
     & span {
-      color: var(--v-font-color-on-secondary);
-    }
-
-    &.primary {
-      background: var(--v-primary-color);
-
-      & span {
-        color: var(--v-font-color-on-primary);
-      }
-    }
-
-    &.secondary {
-      background: transparent;
-      border: 1px solid var(--v-primary-color);
-
-      & span {
-        color: var(--v-font-color);
-      }
+      color: var(--v-font-color-on-primary);
     }
   }
+
+  &.secondary {
+    background: transparent;
+    border: 1px solid var(--v-primary-color);
+
+    & span {
+      color: var(--v-font-color);
+    }
+  }
+}
+*/
+
+button {
+  min-width: 0px;
+  outline: none;
+  border: none;
+  margin: var(--basis);
+  font-size: var(--body-font-size);
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  position: relative;
+  cursor: pointer;
+  padding: var(--basis) var(--basis_x2);
+
+  --button-background: var(--on-background);
+  --button-color: var(--constant-button-color);
+  background: var(--button-background);
+  color: var(--button-color);
+}
+
+button.purple {
+  --button-background: var(--purple);
+  --button-color: var(--on-purple);
+}
+button.yellow {
+  --button-background: var(--yellow);
+  --button-color: var(--on-yellow);
+}
+button.green {
+  --button-background: var(--green);
+  --button-color: var(--on-green);
+}
+button.blue {
+  --button-background: var(--blue);
+  --button-color: var(--on-blue);
+}
+button.red {
+  --button-background: var(--red);
+  --button-color: var(--on-red);
+}
+button.text {
+  --button-background: transparent;
+  --button-color: var(--on-background);
+}
+button:focus {
+  --button-background: var(--background-contrast);
+  --button-color: var(--on-background);
+}
+button:hover{
+  transform-origin: center center;
+  transform: scale(1.05);
+}
+button.choosen:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--basis_x0_5));
+    right: calc(-1 * var(--basis_x0_5));
+    bottom: calc(-1 * var(--basis_x0_5));
+    left: calc(-1 * var(--basis_x0_5));
+    box-shadow: 0 0 0 var(--basis_x0_5) var(--on-background);
+}
+button:focus.choosen:after {
+    box-shadow: 0 0 0 var(--basis_x0_5) var(--on-background-contrast);
+}
+
+button.hasIcon{
+  padding-left: var(--basis);
+}
+button.hasIcon span {
+  margin-left: var(--basis_x2);
 }

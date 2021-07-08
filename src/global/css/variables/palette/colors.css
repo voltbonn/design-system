@@ -1,3 +1,30 @@
+:root {
+  --white: #fff;
+  --white-rgb: 255, 255, 255;
+  --grey: #ede8f1;
+  --grey-rgb: 237, 232, 241;
+  --dark-grey: #aa94c0;
+  --dark-grey-rgb: 170, 148, 192;
+
+  --purple: #502379;
+  --purple-rgb: 80, 35, 121;
+  --on-purple: #fff;
+  --purple-dark: #140022;
+  --purple-dark-rgb: 20, 0, 34;
+
+  --yellow: #FDC220;
+  --on-yellow: #fff;
+  --green: #1BBE6F;
+  --on-green: #fff;
+  --blue: #82D0F4;
+  --on-blue: #fff;
+  --red: #E63E12;
+  --on-red: #fff;
+
+  --alpha-more: 0.8;
+  --alpha-less: 0.12;
+}
+
 .volt {
   /*
   ###################
@@ -53,7 +80,8 @@
 
   --v-white-h: 0;
   --v-white-s: 0%;
-  --v-white-l: 99%;
+  --v-white-l: 100%;
+  /* --v-white-l: 99%; */
   --v-white-100: hsl(var(--v-white-h), var(--v-white-s), var(--v-white-l));
   --v-white-200: hsl(
     var(--v-white-h),
