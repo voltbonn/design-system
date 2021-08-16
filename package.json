@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "start-storybook -s ./public -p 6006",
     "build": "tsc && vite build",
-    "build:css": "npx postcss src/bundle.css -u postcss-import --base src --dir dist",
+    "build:css": "npx postcss src/bundle.css --use postcss-import --use postcss-nesting --base src --dir dist",
     "build:storybook": "build-storybook -s public"
   },
   "devDependencies": {
