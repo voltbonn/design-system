@@ -9,10 +9,10 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@storybook/addon-actions": "^6.3.2",
-    "@storybook/addon-essentials": "^6.3.2",
+    "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-links": "^6.3.2",
     "@storybook/addons": "^6.3.3",
-    "@storybook/html": "^6.3.2",
+    "@storybook/html": "^6.5.15",
     "@storybook/theming": "^6.3.3",
     "babel-loader": "^8.2.2",
     "postcss": "^8.3.5",
