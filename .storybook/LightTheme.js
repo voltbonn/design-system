@@ -5,13 +5,13 @@ export default create({
 
   base: 'light',
 
-  colorPrimary: '#ede8f1',
+  colorPrimary: 'white',
   colorSecondary: '#FDC220',
 
   // UI
-  appBg: '#ede8f1',
+  appBg: 'white',
   appContentBg: 'white',
-  appBorderColor: '#ede8f1',
+  appBorderColor: 'white',
   appBorderRadius: 0,
 
   // Typography
@@ -19,18 +19,18 @@ export default create({
   fontCode: '"Ubuntu Mono", monospace',
 
   // Text colors
-  textColor: 'black',
-  textInverseColor: '#ede8f1',
+  textColor: '#502379',
+  textInverseColor: 'white',
 
   // Toolbar default and active colors
-  barTextColor: 'black',
+  barTextColor: '#502379',
   barSelectedColor: '#FDC220',
   barBg: 'white',
 
   // Form colors
-  inputBg: '#ede8f1',
-  inputBorder: 'black',
-  inputTextColor: 'black',
+  inputBg: 'white',
+  inputBorder: '#502379',
+  inputTextColor: '#502379',
   inputBorderRadius: 0,
 
   brandTitle: 'Volt Design System',

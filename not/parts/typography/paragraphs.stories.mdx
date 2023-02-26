@@ -1,14 +1,28 @@
 import { Meta, Canvas } from "@storybook/addon-docs/blocks"
+import { Source } from '@storybook/addon-docs';
+
+import dedent from 'ts-dedent';
 
 <Meta title="Elements/Typography/Paragraphs" />
 
 # Paragraphs
+
+hello world
 
 <Canvas>
 <div class="volt">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet neque at metus commodo pretium. Donec ac fringilla purus, a venenatis leo. Fusce porttitor ante et quam vestibulum.</p>
 </div>
 </Canvas>
+
+<Source
+  language='html'
+  dark
+  format={true}
+  code={dedent`
+     <p>Lorem ipsum…</p>
+  `}
+/>
 
 <Canvas>
 <div class="volt">

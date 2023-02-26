@@ -1,4 +1,4 @@
-import { wrapDefault, wrapPurple } from '../../utils/modes.js'
+import { wrapDefault, wrapPurple } from '../../../src/utils/modes.js'
 import button_row from './button_row.html?raw'
 
 export default {

@@ -1,0 +1,77 @@
+:root {
+  --purple-lighter: #e6ccff;
+  --purple-light: #b58dd9;
+  --purple: #502379;
+  --purple-dark: #19022d;
+  --purple-darker: #0d0019;
+
+  --green-lighter: #d1ffe9;
+  --green-light: #94fcc9;
+  --green: #1bbe6f;
+  --green-dark: #005029;
+  --green-darker: #00190d;
+
+  --red-lighter: #ffd6cc;
+  --red-light: #ffad93;
+  --red: #e63e12;
+  --red-dark: #641400;
+  --red-darker: #190500;
+
+  --yellow-lighter: #fff1cc;
+  --yellow-light: #ffe787;
+  --yellow: #fdc220;
+  --yellow-dark: #926f0d;
+  --yellow-darker: #191300;
+
+  --blue-lighter: #dff5ff;
+  --blue-light: #c3f1ff;
+  --blue: #82d0f4;
+  --blue-dark: #30708e;
+  --blue-darker: #031219;
+
+  --gray-lighter: #ffffff;
+  --gray-light: #edecee;
+  --gray: #c2bfc4;
+  --gray-dark: #726f76;
+  --gray-darker: #181719;
+
+  --on-purple-lighter: var(--purple-darker);
+  --on-purple-light: var(--purple-darker);
+  --on-purple: var(--gray-lighter);
+  --on-purple-dark: var(--gray-lighter);
+  --on-purple-darker: var(--gray-lighter);
+
+  --on-green-lighter: var(--green-darker);
+  --on-green-light: var(--green-darker);
+  --on-green: var(--gray-lighter);
+  --on-green-dark: var(--gray-lighter);
+  --on-green-darker: var(--gray-lighter);
+
+  --on-red-lighter: var(--red-darker);
+  --on-red-light: var(--red-darker);
+  --on-red: var(--gray-lighter);
+  --on-red-dark: var(--gray-lighter);
+  --on-red-darker: var(--gray-lighter);
+
+  --on-yellow-lighter: var(--yellow-darker);
+  --on-yellow-light: var(--yellow-darker);
+  --on-yellow: var(--yellow-darker);
+  --on-yellow-dark: var(--gray-lighter);
+  --on-yellow-darker: var(--gray-lighter);
+
+  --on-blue-lighter: var(--blue-darker);
+  --on-blue-light: var(--blue-darker);
+  --on-blue: var(--blue-darker);
+  --on-blue-dark: var(--gray-lighter);
+  --on-blue-darker: var(--gray-lighter);
+
+  --on-gray-lighter: var(--gray-darker);
+  --on-gray-light: var(--gray-darker);
+  --on-gray: var(--gray-darker);
+  --on-gray-dark: var(--gray-lighter);
+  --on-gray-darker: var(--gray-lighter);
+
+  --alpha-more: 0.8;
+  --alpha: 0.6;
+  --alpha-less: 0.2;
+}

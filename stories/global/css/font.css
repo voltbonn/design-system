@@ -26,7 +26,3 @@ html[lang="ar"] { /* for arabic */
 code {
   font-family: 'Ubuntu Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-body {
-  font-size: var(--body-font-size);
-}

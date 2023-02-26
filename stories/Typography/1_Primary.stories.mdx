@@ -1,0 +1,83 @@
+<!-- Typography.stories.mdx -->
+
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { Source } from '@storybook/addon-docs';
+import dedent from 'ts-dedent';
+
+<Meta title="Typography/Primary" />
+
+export const typography = {
+  type: {
+    primary: '"Ubuntu", sans-serif',
+    code: '"Ubuntu Mono", monospace',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+  },
+  size: {
+    s1: 12,
+    s2: 14,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    m3: 28,
+    l1: 32,
+    l2: 40,
+    l3: 48,
+  },
+};
+
+
+
+# Typography
+
+<br />
+
+## Primary
+
+**Font:** Ubuntu
+
+**Weights:** 400(regular), 700(bold)
+
+<Typeset
+  fontSizes={[
+    // Number(typography.size.s1),
+    // Number(typography.size.s2),
+    // Number(typography.size.s3),
+    // Number(typography.size.m1),
+    // Number(typography.size.m2),
+    Number(typography.size.m3),
+    // Number(typography.size.l1),
+    // Number(typography.size.l2),
+    // Number(typography.size.l3),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={'Future Made in Europe'}
+  fontFamily={typography.type.primary}
+/>
+
+### Please use the following font stack:
+This ensures that Arabic letters are displayed correctly. and a good fallback font is used while loading the Ubuntu font.
+<Source
+  language='css'
+  dark
+  format={false}
+  code={dedent`
+    font-family: 'Ubuntu', 'Noto Kufi Arabic', 'Geeza Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  `}
+/>
+
+1. Ubuntu = This is our **Volt default font**. (It includes latin and arabic characters.)
+<br /><br />
+2. Noto Kufi **Arabic** = A Noto font from Google (maybe it's installed)
+3. Geeza Pro = macOS Arabic Default
+<br /><br />
+4. -apple-system, BlinkMac**SystemFont** = macOS Default
+5. Helvetica Neue = Old macOS Default
+6. Segoe UI = Windows Default
+7. Roboto = Android Default
+8. Fira Sans = Firefox OS Default
+9. Oxygen, Cantarell, Droid Sans = Linux
+<br /><br />
+10. sans-serif = **Fallback**

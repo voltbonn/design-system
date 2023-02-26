@@ -17,5 +17,5 @@
     "checkJs": true,
     "types": ["vite/client"]
   },
-  "include": ["./src"]
+  "include": ["./stories"]
 }

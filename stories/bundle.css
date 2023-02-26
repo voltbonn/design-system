@@ -1,14 +1,14 @@
 /* When compiling for production these imports are replaced in place thanks to the postcss plugin postcss-import */
-@import url("./global/css/variables/");
 @import url("./global/css/reset.css");
-@import url("./global/css/base.css");
-
-@import url("./global/css/variables/sizes.css");
 @import url("./global/css/font.css");
+@import url("./global/css/base.css");
+@import url("./global/css/colors.css");
 
+/*
 @import url("./parts/button/button.css");
 @import url("./parts/button_row/button_row.css");
 @import url("./parts/inputs/select.css");
 @import url("./parts/inputs/text.css");
 @import url("./parts/typography/typography.css");
 @import url("./parts/typography/lists.css");
+*/

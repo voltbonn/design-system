@@ -1,0 +1,69 @@
+<!-- Typography.stories.mdx -->
+
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { Source } from '@storybook/addon-docs';
+import dedent from 'ts-dedent';
+
+<Meta title="Typography/Code" />
+
+export const typography = {
+  type: {
+    primary: '"Ubuntu", sans-serif',
+    code: '"Ubuntu Mono", monospace',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+  },
+  size: {
+    s1: 12,
+    s2: 14,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    m3: 28,
+    l1: 32,
+    l2: 40,
+    l3: 48,
+  },
+};
+
+
+
+# Typography
+
+<br />
+
+## Code
+
+**Font:** Ubuntu Mono
+
+**Weights:** 400(regular), 700(bold)
+
+<Typeset
+  fontSizes={[
+    // Number(typography.size.s1),
+    // Number(typography.size.s2),
+    // Number(typography.size.s3),
+    // Number(typography.size.m1),
+    // Number(typography.size.m2),
+    Number(typography.size.m3),
+    // Number(typography.size.l1),
+    // Number(typography.size.l2),
+    // Number(typography.size.l3),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={'<html></html>'}
+  fontFamily={typography.type.code}
+/>
+
+### Please use the following font stack:
+This ensures a good fallback font is used while loading Ubuntu Mono.
+<Source
+  language='css'
+  dark
+  format={false}
+  code={dedent`
+    font-family: 'Ubuntu Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  `}
+/>

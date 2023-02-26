@@ -1,26 +1,27 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "start-storybook -s ./public -p 6006",
+    "dev": "start-storybook -p 6006",
     "build": "tsc && vite build",
-    "build:css": "npx postcss src/bundle.css --use postcss-import --use postcss-nesting --base src --dir dist",
-    "build:storybook": "build-storybook -s public"
+    "build:css": "npx postcss stories/bundle.css --use postcss-import --use postcss-nesting --base stories --dir dist",
+    "build:storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@storybook/addon-actions": "^6.3.2",
-    "@storybook/addon-essentials": "^6.3.2",
-    "@storybook/addon-links": "^6.3.2",
-    "@storybook/addons": "^6.3.3",
-    "@storybook/html": "^6.3.2",
-    "@storybook/theming": "^6.3.3",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addons": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/html": "^6.5.16",
+    "@storybook/theming": "^6.5.16",
     "babel-loader": "^8.2.2",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^8.0.1",
-    "storybook-builder-vite": "0.0.10",
-    "storybook-dark-mode": "^1.0.8",
+    "storybook-dark-mode": "^2.1.1",
     "storycap": "^3.0.4",
     "typescript": "^4.3.2",
     "vite": "^2.9.13"
