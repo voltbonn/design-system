@@ -26,5 +26,7 @@
     "typescript": "^4.3.2",
     "vite": "^2.9.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }
